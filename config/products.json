@@ -1,0 +1,42 @@
+[
+  {
+    "product_code": "iphone-13",
+    "title": "Смартфон Apple iPhone 13 128GB Pink",
+    "category_code": "electronic",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F800%2F800%2F252947_1.jpg&w=3840&q=85",
+    "description": "",
+    "count": 10,
+    "order_count": 200,
+    "price": 400000
+  },
+  {
+    "product_code": "lenovo-ideapad",
+    "title": "Ноутбук Lenovo IdeaPad 3 i3",
+    "category_code": "electronic",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F800%2F800%2Fnoutbuk_156_lenovo_ideapad_3_82rk00hwrk_268001_1.jpg&w=1920&q=85",
+    "description": "",
+    "count": 11,
+    "order_count": 100,
+    "price": 240000
+  },
+  {
+    "product_code": "holodilnik-lg",
+    "title": "Холодильник LG GC-B509SESM",
+    "category_code": "electronic",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F264253_1.jpg&w=256&q=100",
+    "description": "",
+    "count": 11,
+    "order_count": 100,
+    "price": 350000
+  },
+  {
+    "product_code": "magic-mouse-apple",
+    "title": "Magic Mouse Apple",
+    "category_code": "electronic",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F256650_1.jpg&w=256&q=100",
+    "description": "",
+    "count": 11,
+    "order_count": 100,
+    "price": 50000
+  }
+]
