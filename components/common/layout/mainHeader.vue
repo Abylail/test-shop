@@ -7,8 +7,12 @@
         </div>
       </div>
       <div class="main-header__right">
-        <button class="main-header__cart" @click="goCart()">
-          <span class="main-header__cart-count" v-if="cartCount">{{ cartCount }}</span>
+        <button class="main-header__index" @click="goFavorite()">
+          <span class="main-header__index-count">{{ favoriteCount }}</span>
+          <base-icon>mdi-heart-outline</base-icon>
+        </button>
+        <button class="main-header__index" @click="goCart()">
+          <span class="main-header__index-count">{{ cartCount }}</span>
           <base-icon>mdi-cart-outline</base-icon>
         </button>
       </div>
@@ -24,12 +28,17 @@ export default {
   computed: {
     ...mapGetters({
       cartCount: "account/cart/getCount",
+      favoriteCount: "account/favorite/getCount",
     })
   },
   methods: {
     // Перейти в корзину
     goCart() {
       this.$router.push("/cart");
+    },
+    // Перейти в избранные
+    goFavorite() {
+      this.$router.push("/favorite");
     },
 
     // Перейти на главную
@@ -66,8 +75,8 @@ export default {
     margin-right: 5px;
   }
 
-  &__cart {
-    display: flex;
+  &__index {
+    display: inline-flex;
     align-items: center;
     font-weight: bold;
     font-size: 14px;
@@ -76,7 +85,7 @@ export default {
     &:hover {background: $color--light-gray}
   }
 
-  &__cart-count {
+  &__index-count {
     display: inline-block;
     margin-right: 5px;
   }

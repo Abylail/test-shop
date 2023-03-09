@@ -4,10 +4,13 @@ export const state = () => ({
 })
 
 export const getters = {
-  // Список продуктов корзины
+  // Список избранных
   getList: state => state.list || [],
 
-  // Список кодов продуктов в корзине
+  // Колличество избранных
+  getCount: state => state.list.length,
+
+  // Список кодов избранных
   getCodes: state => (state.list || []).map(({product_code}) => product_code)
 }
 

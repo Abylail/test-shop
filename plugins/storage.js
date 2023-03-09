@@ -20,6 +20,7 @@ const createTool = serviceName => ({
 const createTools = () => ({
   cart: createTool("cart"),
   favorite: createTool("favorite"),
+  myOrders: createTool("myOrders"),
 })
 
 export default({  }, inject) => {

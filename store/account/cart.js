@@ -22,7 +22,22 @@ export const mutations = {
   // Добавить
   add(state, product) {
     state.list = [...state.list, {product, count: 1}];
-  }
+  },
+
+  // Изменить колличество
+  setCount(state, {productCode, count}) {
+    let newList = state.list.slice();
+    const productIndex = newList.findIndex(({product}) => product.product_code === productCode);
+    if (productIndex >= 0) {
+      newList[productIndex] = {...newList[productIndex], count}
+    }
+    state.list = newList;
+  },
+
+  // Удалить
+  remove(state, {product_code}) {
+    state.list = state.list.filter(({product}) => product.product_code !== product_code)
+  },
 }
 
 export const actions = {
@@ -40,6 +55,24 @@ export const actions = {
   // Добавить
   add({ commit, dispatch }, product) {
     commit("add", product);
+    dispatch("_save")
+  },
+
+  // Добавить
+  setCount({ commit, dispatch, state }, {product, count}) {
+    commit("setCount", {productCode: product.product_code, count});
+    dispatch("_save");
+  },
+
+  // Удалить
+  remove({ commit, dispatch }, product) {
+    commit("remove", product);
+    dispatch("_save")
+  },
+
+  // Очистить корзину
+  clear({ commit, dispatch }) {
+    commit("set", ["list", []]);
     dispatch("_save")
   },
 

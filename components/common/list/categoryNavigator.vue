@@ -37,6 +37,8 @@ export default {
 
 <style lang="scss" scoped>
 .category-navigator {
+  position: sticky;
+  top: 95px;
   margin-top: 10px;
   background: white;
   border-radius: 4px;

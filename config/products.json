@@ -38,5 +38,165 @@
     "count": 11,
     "order_count": 100,
     "price": 50000
+  },
+  {
+    "product_code": "planshet-ipad",
+    "title": "Планшет ipad",
+    "category_code": "electronic",
+    "image": "https://www.technodom.kz/_next/image?url=https%3A%2F%2Fapi.technodom.kz%2Ff3%2Fapi%2Fv1%2Fimages%2F800%2F800%2F245553_1.jpg&w=3840&q=85",
+    "description": "",
+    "count": 11,
+    "order_count": 100,
+    "price": 520000
+  },
+  {
+    "product_code": "tryapka",
+    "title": "Тряпка",
+    "category_code": "for_home",
+    "image": "https://ddw.kz/image/cache/catalog/tp/tl406118-750x750.jpg",
+    "description": "",
+    "count": 211,
+    "order_count": 2100,
+    "price": 260
+  },
+  {
+    "product_code": "vedro",
+    "title": "Ведро",
+    "category_code": "for_home",
+    "image": "https://s.leroymerlin.kz/upload/catalogue/product_images/6/1/800x800/18513488.png",
+    "description": "",
+    "count": 21,
+    "order_count": 20,
+    "price": 2060
+  },
+  {
+    "product_code": "musor-vedro",
+    "title": "Мусорное ведро",
+    "category_code": "for_home",
+    "image": "https://images.satu.kz/171773825_w640_h2048_2.jpg?fresh=1&PIMAGE_ID=171773825",
+    "description": "",
+    "count": 201,
+    "order_count": 10,
+    "price": 1060
+  },
+  {
+    "product_code": "kotenok",
+    "title": "Домашний котенок",
+    "category_code": "for_home",
+    "image": "https://astrafarm.com/images/encyclopedia/ittenVes170221.jpg",
+    "description": "",
+    "count": 51,
+    "order_count": 130,
+    "price": 10060
+  },
+  {
+    "product_code": "shkaf",
+    "title": "Шкаф",
+    "category_code": "for_home",
+    "image": "https://zeta.kz/upload/ilab/resize_cache/iblock/80e/ad5cpe2fu7tuy30p3103rlhhuec7b713.jpg",
+    "description": "",
+    "count": 17,
+    "order_count": 30,
+    "price": 103060
+  },
+  {
+    "product_code": "posguznik",
+    "title": "Подгузник",
+    "category_code": "child_goods",
+    "image": "https://dastarkhan24.kz/upload/iblock/936/936ede0a06291dfe9bc781ccf0e29b97.jpg",
+    "description": "",
+    "count": 107,
+    "order_count": 390,
+    "price": 5060
+  },
+  {
+    "product_code": "mashina",
+    "title": "Металлическая машина",
+    "category_code": "child_goods",
+    "image": "https://img.al-style.kz/35619_1.jpg",
+    "description": "",
+    "count": 17,
+    "order_count": 90,
+    "price": 2060
+  },
+  {
+    "product_code": "kukla",
+    "title": "Кукла",
+    "category_code": "child_goods",
+    "image": "https://images.satu.kz/69946624_barbie-kukla-barbi.jpg",
+    "description": "",
+    "count": 19,
+    "order_count": 80,
+    "price": 2070
+  },
+  {
+    "product_code": "kukla2",
+    "title": "Кукла 2",
+    "category_code": "child_goods",
+    "image": "https://images.satu.kz/170197847_barbie-ekstra-modnaya.jpg",
+    "description": "",
+    "count": 23,
+    "order_count": 85,
+    "price": 2071
+  },
+  {
+    "product_code": "futbolnyi_myach",
+    "title": "Футбольный мяч",
+    "category_code": "entertainment",
+    "image": "https://images.satu.kz/76704692_futbolnyj-myach-adidas.jpg",
+    "description": "",
+    "count": 203,
+    "order_count": 89,
+    "price": 4071
+  },
+  {
+    "product_code": "basketbolnyi_myach",
+    "title": "Баскетбольный мяч",
+    "category_code": "entertainment",
+    "image": "https://www.i-igrushki.ru/upload/iblock/c04/c04c663ede8c702ef2a39bd47bbf851b.jpg",
+    "description": "",
+    "count": 263,
+    "order_count": 99,
+    "price": 8071
+  },
+  {
+    "product_code": "arbuznyi_myach",
+    "title": "Арбузный мяч",
+    "category_code": "entertainment",
+    "image": "https://img.joomcdn.net/cf1c110360d94e186b1fedcebd9436c3d5cc5965_original.jpeg",
+    "description": "",
+    "count": 213,
+    "order_count": 199,
+    "price": 771
+  },
+  {
+    "product_code": "nabor_risovaniya",
+    "title": "Набор рисования",
+    "category_code": "entertainment",
+    "image": "https://images.satu.kz/113622211_w640_h640_hudozhestvennyj-nabor-dlya.jpg",
+    "description": "",
+    "count": 1213,
+    "order_count": 69,
+    "price": 1771
+  },
+  {
+    "product_code": "detskaya_komnata",
+    "title": "Детская комната",
+    "category_code": "child_goods",
+    "image": "https://www.artwall.ru/img/articles/2016/1809/detskaja-dlja-malchika.jpg",
+    "description": "",
+    "count": 1,
+    "order_count": 2,
+    "price": 1004771
+  },
+  {
+    "product_code": "testovoye_zadanye",
+    "title": "Тестовое задание",
+    "category_code": "entertainment",
+    "image": "https://happymonday.ua/wp-content/uploads/2020/05/testovoe-zadanie-940x528.jpg",
+    "description": "",
+    "count": 1,
+    "order_count": 1,
+    "price": 10
   }
 ]

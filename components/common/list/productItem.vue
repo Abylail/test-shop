@@ -1,5 +1,5 @@
 <template>
-  <div class="product-item">
+  <div class="product-item" :class="{'product-item--mobile': $isMobile}">
     <div class="product-item__image" :style="{backgroundImage: `url(${info.image})`}"/>
     <div class="product-item__info">
       <div class="product-item__title">{{ info.title }}</div>
@@ -78,6 +78,10 @@ export default {
   margin: 10px 10px 10px 0;
   width: 100%;
   max-width: 200px;
+
+  &--mobile {
+    max-width: none;
+  }
 
   &__image {
     height: 150px;

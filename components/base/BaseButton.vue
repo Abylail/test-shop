@@ -1,7 +1,7 @@
 <template>
   <button
     class="base-button"
-    :class="[`base-button--type-${type}`, {'base-button--full-width': fullWidth}]"
+    :class="[`base-button--type-${type}`, `base-button--size-${size}`, {'base-button--full-width': fullWidth}]"
     v-on="$listeners"
   ><slot/></button>
 </template>
@@ -13,7 +13,12 @@ export default {
     type: {
       type: String,
       default: "default",
-      validator: val => ["default","primary", "no-background"].includes(val),
+      validator: val => ["default","primary","red-outlined","no-background"].includes(val),
+    },
+    size: {
+      type: String,
+      default: "middle",
+      validator: val => ["big", "middle"].includes(val),
     },
     fullWidth: {
       type: Boolean,
@@ -48,6 +53,28 @@ export default {
 
   &--type-no-background {
     background: none;
+  }
+
+  &--type-red-outlined {
+    color: $color--red;
+    background: transparent;
+    border: 1px solid $color--red;
+    &:hover {
+      background: $color--red;
+      color: white;
+    }
+  }
+
+  // Размеры
+  &--size-middle {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px;
+  }
+  &--size-big {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 12px;
   }
 
   // Доп опции
