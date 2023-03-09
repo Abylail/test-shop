@@ -3,18 +3,7 @@
 
     <!-- Старые заказы -->
     <slide>
-      <div class="cart__my-orders" v-if="myOrders.length">
-        <h2 class="cart__title">Мои заказы</h2>
-
-        <!-- Список -->
-        <div class="cart__list" v-for="(orders, index) in myOrders" :key="index">
-          <div class="cart__subtitle">Заказ {{ index + 1 }}</div>
-          <cart-item
-            v-for="order in orders" :key="order.product.product_code"
-            :info="order"
-          />
-        </div>
-      </div>
+      <my-orders v-if="myOrders.length"/>
     </slide>
 
     <h1 class="cart__title">Корзина</h1>
@@ -47,10 +36,11 @@
 import {mapActions, mapGetters} from "vuex";
 import CartItem from "~/components/common/cart/cartItem.vue";
 import Slide from "@/components/transitions/Slide.vue";
+import MyOrders from "@/components/common/cart/myOrders.vue";
 
 export default {
   name: "index",
-  components: {Slide, CartItem},
+  components: {MyOrders, Slide, CartItem},
   computed: {
     ...mapGetters({
       cartList: "account/cart/getList",

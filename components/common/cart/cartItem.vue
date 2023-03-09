@@ -5,13 +5,13 @@
     <div class="cart-item__price">{{ product.price }} ₸</div>
     <div class="cart-item__count">
       <div class="cart-item__count-wrapper">
-        <button class="cart-item__count-input-arrow" @click="decreaseCount()"><base-icon>mdi-minus</base-icon></button>
-        <input class="cart-item__count-input" :value="info.count" type="number" @input="inputCount($event.target.value)"/>
-        <button class="cart-item__count-input-arrow" @click="increaseCount()"><base-icon>mdi-plus</base-icon></button>
+        <button class="cart-item__count-input-arrow" v-if="!old" @click="decreaseCount()"><base-icon>mdi-minus</base-icon></button>
+        <input class="cart-item__count-input" :value="info.count" type="number" :disabled="old" @input="inputCount($event.target.value)"/>
+        <button class="cart-item__count-input-arrow" v-if="!old" @click="increaseCount()"><base-icon>mdi-plus</base-icon></button>
       </div>
     </div>
     <div class="cart-item__sum">{{ sum }} ₸</div>
-    <div class="cart-item__delete">
+    <div class="cart-item__delete" v-if="!old">
       <base-button type="red-outlined" @click="deleteHandle()">Удалить</base-button>
     </div>
   </div>
@@ -56,8 +56,16 @@ export default {
 
     // Изменить колличество
     inputCount(count) {
-      if (count <= 0) this._delete(this.product);
-      else this._setCount({product: this.product, count})
+      let newCount = count;
+      if (count > this.product.count) {
+        alert(`Осталость ${this.product.count} товара`)
+        newCount = this.product.count;
+      }
+      if (isNaN(parseInt(count))) {
+        newCount = this.info.count;
+      }
+      if (newCount <= 0) this._delete(this.product);
+      else this._setCount({product: this.product, count: newCount})
     },
 
     // Увеличить колличество
@@ -120,6 +128,7 @@ export default {
     text-align: center;
     outline: none;
     appearance: textfield;
+    background: white;
   }
 
 }
